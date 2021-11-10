@@ -162,13 +162,42 @@ font-weight: 900;
   border-radius: 18px;
 }
 
-.Main-info h2 {
-  margin-left: 0.5%;
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: rgb(246, 206, 96);
+  border-radius: 18px;
 }
 
-.Main-info p {
-  margin-left: 0.5%;
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 18px;
 }
 
-/* This button shows review categories*/
+.tab button:hover {
+  background-color: white;
+  border-radius: 18px;
+}
+
+.tab button.active {
+  background-color:white;
+  border-radius: 18px;
+}
+
+.tabcontent {
+  display: none;
+  margin-left: 10px;
+  border: none;
+  border-top: none;
+}
+
+/* This button shows path to review page*/
+
 

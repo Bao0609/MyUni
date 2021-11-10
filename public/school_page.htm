@@ -7,6 +7,7 @@
     <title>School Name</title>
     <link rel="stylesheet" href="school_page.css">
 	<script src="https://kit.fontawesome.com/83fd373d2e.js" crossorigin="anonymous"></script>
+	<script src="../src/Search.js"></script>
 </head>
 <body>
     <div class="Navigation Bar">
@@ -25,7 +26,7 @@
 			</ul>
 
 			  <div class="Login">
-				<form action="login.htm" target="_blank">
+				<form action="login.html" target="_blank">
 					<button type="submit" style="color: black">SIGN UP/lOG IN</button>
 				</form>
 		      </div>
@@ -39,30 +40,24 @@
     <div class="Page-wrapper">
 		<div class="main-wrapper">
 			<img class="Bachkhoa" src="Bachkhoa.jpg">  
-				
 				<div class="Main-info">
-					<h2>Hanoi University of Science and Technology</h2>
-					<p><i class="fas fa-map-marker-alt"></i>  1 Dai Co Viet Road, Ha Noi, Viet Nam</p>
-					<P><i class="fas fa-phone-square-alt"></i>:  +84 243 869 2222</P>
-					<p><i class="far fa-envelope"></i>:  htdn@hust.edu.vn</p>
-					<p>Type: public</p>
-					<p><i class="fas fa-school"></i>:  Since establishment, HUST has been committed to research, knowledge development and intellectual training for the society. The university gains the reputation of being the first and the leading technical university in Vietnam thanks to generations of influential alumni.</p>
-					<p><i class="fas fa-money-check-alt"></i>: $3,300 - $5000 per year</p>
-
-					<div id="Reviews">
-						<div class="reviews-tabs">
-							<button class="tablinks" onclick="Open(event, 'SeeReviews')">Reviews</button>
-							<button class="tablinks" onclick="Open(event, 'WriteReviews')">Give us a review</button>
-						</div>
-
-						<div id="SeeReviews" class="tabcontent">
-							something something
-						</div>
-
-
-						
-						</div>
-					</div>	
+					<div class="tab">
+						<button class="tablinks" onclick="opentab(event, 'Details')">Details</button>
+						<button class="tablinks" onclick="opentab(event, 'Reviews')">Reviews</button>
+						<button class="tablinks" onclick="location.href='review.htm'">Tokyo</button>
+					  </div>
+					  
+					  <div id="Details" class="tabcontent" style="display: block;">
+						<h2>Hanoi University of Science and Technology</h2>
+						<p><i class="fas fa-map-marker-alt"></i>  1 Dai Co Viet Road, Ha Noi, Viet Nam</p>
+						<P><i class="fas fa-phone-square-alt"></i>:  +84 243 869 2222</P>
+						<p><i class="far fa-envelope"></i>:  htdn@hust.edu.vn</p>
+						<p>Type: public</p>
+						<p><i class="fas fa-money-check-alt"></i>: $3,300 - $5000</p>
+					  </div>
+					  
+					  <div id="Reviews" class="tabcontent" style="display: none;">
+					  </div>
 				</div>
 		</div>
     </div>
