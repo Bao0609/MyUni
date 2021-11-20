@@ -2,13 +2,12 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
-
-import PostReviewsRoutes from './routes/PostReviews.js';
+import router from './routes/school-data.js';
 
 const app = express()
 
 mongoose.connect(
-    `mongodb://localhost:27017/MyUni`,
+    `mongodb://localhost/MyUni`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -21,11 +20,12 @@ mongoose.connect(
       }
     }
   );
-  
+
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use('/PostReviews', PostReviewsRoutes)
+app.use('/school-data', router);
+
 
 app.listen(8080, () => {
 	console.log(`Server started on 8080`);

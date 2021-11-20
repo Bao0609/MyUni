@@ -44,7 +44,7 @@
 					<div class="tab">
 						<button class="tablinks" onclick="opentab(event, 'Details')">Details</button>
 						<button class="tablinks" onclick="opentab(event, 'Reviews')">Reviews</button>
-						<button class="tablinks" onclick="location.href='review.htm'">Tokyo</button>
+						<button class="tablinks" onclick="opentab(event, 'writeReviews')">Rate us!</button>
 					  </div>
 					  
 					  <div id="Details" class="tabcontent" style="display: block;">
@@ -58,6 +58,36 @@
 					  
 					  <div id="Reviews" class="tabcontent" style="display: none;">
 					  </div>
+
+					  <div id="writeReviews" class="tabcontent" style="display: none;">
+						<div class="reviewForm">
+							<div class="post">
+								<div class="text">Thanks for rating us!</div>
+								<div class="edit">EDIT</div>
+							</div>
+							<div class="star-widget">
+								<input type="radio" name="rate" id="rate-5">
+								<label for="rate-5" class="fas fa-star"></label>
+								<input type="radio" name="rate" id="rate-4">
+								<label for="rate-4" class="fas fa-star"></label>
+								<input type="radio" name="rate" id="rate-3">
+								<label for="rate-3" class="fas fa-star"></label>
+								<input type="radio" name="rate" id="rate-2">
+								<label for="rate-2" class="fas fa-star"></label>
+								<input type="radio" name="rate" id="rate-1">
+								<label for="rate-1" class="fas fa-star"></label>
+								<form action="#" method="POST">
+								<header></header>
+								<div class="textarea">
+									<textarea cols="30" placeholder="Describe your experience.."></textarea>
+								</div>
+								<div class="btn">
+									<button type="submit">Post</button>
+								</div>
+								</form>
+							</div>
+						</div>
+					</div>
 				</div>
 		</div>
     </div>
